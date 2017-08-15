@@ -1,0 +1,4 @@
+D:\Myproject\7HMC\7Hmc\7Hmc.Web\bin\7Hmc.Web.dll
+D:\Myproject\7HMC\7Hmc\7Hmc.Web\bin\7Hmc.Web.pdb
+D:\Myproject\7HMC\7Hmc\7Hmc.Web\obj\Release\7Hmc.Web.dll
+D:\Myproject\7HMC\7Hmc\7Hmc.Web\obj\Release\7Hmc.Web.pdb
