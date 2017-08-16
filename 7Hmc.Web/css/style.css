@@ -3,6 +3,7 @@
 *{margin:0;padding:0;}
 a{text-decoration:none;}
 li{text-decoration:none;list-style-type: none;}
+img{border:none;}
 input {outline:none;}
 input:focus {outline:none;}
 .Clearfix:after{visibility:hidden;display:block;font-size:0;content: " ";clear:both;height:0;}
@@ -10,6 +11,7 @@ input:focus {outline:none;}
 .Fl{float:left;}
 .Fr{float:right;}
 .Bg {background:#ffffff;}
+.Margin{margin:.2rem 0;}
 
 body{background:#f2f2f2;}
 
@@ -60,7 +62,9 @@ body{background:#f2f2f2;}
 }
 .Bomdbox .Portrait {
     margin-top:-0.8rem;
+	width:35%;
 }
+.Bomdbox .Portrait img{width:100%;}
 .Bomdbox .Bomdcomment h2 {
     display:block;
     font-size:.3rem;
@@ -70,13 +74,18 @@ body{background:#f2f2f2;}
     border-bottom:2px solid #cccccc;
 }
 .Bomdbox .Bomdcomment .Course{
-    position:relative;
-    padding:0 2%;
-    padding-top:.6rem;
     height:100%;
     max-height:5rem;
     border-bottom:1px solid #cccccc;
     overflow:scroll;
+}
+.Bomdbox .Bomdcomment .Course li{
+	position:relative;
+	padding:0 2%;
+	padding-top:.5rem;
+	padding-bottom:.2rem;
+	line-height:.4rem;
+	border-bottom:.01rem solid #cccccc;
 }
 .Bomdbox .Bomdcomment .Course p{
     font-size:.2rem;
@@ -85,12 +94,10 @@ body{background:#f2f2f2;}
 }
 .Bomdbox .Bomdcomment .Course span{
     position:absolute;
-    top:.2rem;
+    top:.1rem;
     right:2%;
     font-size:.2rem;
 }
-
-
 /*public end ======================================= */
 
 
@@ -123,14 +130,15 @@ footer{
 	position:fixed;
 	bottom:0;
 	width:100%;
-	max-width:640px;
 	height:.6rem;
 	line-height:.6rem;
-	background:#ffffff;
-	left:50%;
-	transform:translate(-50%);
-	border-top:1px solid #cccccc;
 	z-index:99;
+}
+footer .Footerbox{
+	margin:0 auto;
+	max-width:640px;
+	background:#ffffff;
+	border-top:1px solid #cccccc;
 }
 footer .Fbtn{
 	display:block;
@@ -330,6 +338,12 @@ footer .Fbtn{
 /*goodsshow end ================================= */
 
 /*goodsdetails*/
+.Goodsfooter{
+	margin:0 auto;
+	max-width:640px;
+	background:#ffffff;
+	border-top:1px solid #cccccc;
+}
 .Goodsfooter a:first-child p{
     border-right:1px solid #cccccc;
 }
@@ -366,19 +380,71 @@ footer .Fbtn{
 }
 /*goodsdetails*/
 
-
-
-
-
-
-
-
-
+/*personal center*/
+.Personaltop{
+	padding:5%;
+	width:90%;
+	background:red;
+}
+.Personaltop img{
+	margin-right:.3rem;
+	width:1.5rem;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.Personaltop p{
+	margin-top:.2rem;
+	line-height:.4rem;
+	font-size:.3rem;
+	color:#ffffff;
+}
+.Personaltop span{
+	display:block;
+	line-height:.4rem;
+	font-size:.26rem;
+	color:#ffffff;
+}
+.Personalbox h2{
+	padding:.2rem;
+	height:.4rem;
+	font-size:.3rem;
+	color:#000000;
+	border-bottom:1px solid #cccccc;
+}
+.Personalbox h2 a{
+	font-size:.18rem;
+	font-weight:normal;
+	color:#3C3C3C;
+}
+.Personalbox .Transbox li{
+	padding:.2rem 0;
+	float:left;
+	width:20%;
+	font-size:0;
+	text-align: center;
+}
+.Personalbox .Transbox li img{max-width:90%;}
+.Personalbox .Transbox li p{
+	display:block;
+	margin-top:.2rem;
+	line-height:.4rem;
+	font-size:.2rem;
+	color:#000000;
+}
+.Personalbox .Peractivity li{width:25%;}
+/*personal center end ================================== */
 
 
 
 
 @media only screen and (min-width: 640px) {
+	/*public*/
+	.Margin{margin:10px 0;}
+	
+	
+	
 	header{
 		height:40px;
 		line-height:40px;
@@ -425,6 +491,17 @@ footer .Fbtn{
 		border-radius:6px;
 	}
 	
+	
+	
+	
+	/*personal center*/
+	.Personaltop img{width:120px;margin-right:20px;}
+	.Personaltop p{margin-top:20px;font-size:20px;line-height:40px;}
+	.Personaltop span{font-size:16px;line-height:20px;}
+	.Personalbox h2{padding:10px;height:30px;font-size:20px;}
+	.Personalbox h2 a{font-size:16px;line-height:30px;}
+	.Personalbox .Transbox li{padding:10px 0;}
+	.Personalbox .Transbox li p{margin-top:10px;line-height:30px;font-size:18px;}
 }
 
 
