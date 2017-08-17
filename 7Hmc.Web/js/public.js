@@ -46,14 +46,48 @@
 		cover.show();
 	});
 
+	
+	
+	
+	
+	//区分不同的加减区域 点击事件
+	Number();
+	//商品数量加减
+	function Number(){
+		var num=parseInt($(".Num").html());
+		var reduce=$(".Reducebtn");//减号
+		var add=$(".Addbtn");//加号
+		
+		reduce.on('click',function(){
+			if(num==0){
+				reduce.addClass("No");
+				return false;
+			}else if(num==1){
+				reduce.addClass("No");
+				num=Reduce(num);
+				$(this).siblings(".Num").html(num);
+			}else{
+				num=Reduce(num);
+				$(this).siblings(".Num").html(num);
+			}
+		});
+		add.on('click',function(){
+			num=Add(num);
+			$(this).siblings(".Num").html(num);
+		});
+	}
+	
+	//加
+	function Add(num){
+		num+=1;
+		return num;
+	}
 
-
-
-
-
-
-
-
+	//减
+	function Reduce(num){
+		num-=1;
+		return num;
+	}
 
 
 
