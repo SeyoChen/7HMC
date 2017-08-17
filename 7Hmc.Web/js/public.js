@@ -25,7 +25,7 @@
 	var winHeight;
 	commentBtn.on('click',function(){
 		winHeight=$(window).height();
-		courseHeight.height(winHeight/4);
+		courseHeight.height(winHeight/3);
 		boxComment.css({'display':'block'}).animate({'bottom':'0'},500);
 		cover.show();
 	});
@@ -54,11 +54,13 @@
 	Number();
 	//商品数量加减
 	function Number(){
-		var num=parseInt($(".Num").html());
+		var num=0;
 		var reduce=$(".Reducebtn");//减号
 		var add=$(".Addbtn");//加号
 		
 		reduce.on('click',function(){
+			num=parseInt($(this).siblings(".Num").html());
+			
 			if(num==0){
 				reduce.addClass("No");
 				return false;
@@ -72,6 +74,7 @@
 			}
 		});
 		add.on('click',function(){
+			num=parseInt($(this).siblings(".Num").html());
 			num=Add(num);
 			$(this).siblings(".Num").html(num);
 		});

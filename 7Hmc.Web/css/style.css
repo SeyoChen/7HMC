@@ -183,15 +183,16 @@ header{
 	position:fixed;
 	top:0;
 	width:100%;
-	max-width:640px;
 	height:.51rem;
 	line-height:.51rem;
-	background:#ffffff;
-	left:50%;
-	transform:translate(-50%);
-	border-bottom:1px solid #cccccc;
 	text-align:center;
 	z-index:99;
+}
+header .Headerbox{
+	margin:0 auto;
+	max-width:640px;
+	background:#ffffff;
+	border-bottom:1px solid #cccccc;
 }
 header .Hbtn{
 	display:block;
@@ -384,6 +385,7 @@ footer .Fbtn{
 .Goodslayout .Goodsbox li {
     float:left;
     width:50%;
+    font-size:0;
 }
 .Goodslayout .Goodsbox li a {
     display:block;
@@ -518,59 +520,32 @@ footer .Fbtn{
 
 @media only screen and (min-width: 640px) {
 	/*public*/
-	.Margin{margin:10px 0;}
-	
-	
-	
-	header{
-		height:40px;
-		line-height:40px;
-	}
-	footer{
-		height:50px;
-		line-height:50px;
-	}
-	.Content{
-		padding-top:40px;
-		padding-bottom:50px;
-	}
-
+	header{height:40px;line-height:40px;}
 	header .Hbtn{font-size:20px;}
-	.Linkbox a{font-size:16px;}
-	
+	footer{height:50px;line-height:50px;}
 	footer .Fbtn{font-size:20px;}
+	
+	.Btn{margin:10px auto;padding:10px 0;height:30px;line-height:30px;font-size:24px;-webkit-border-radius: 4px;border-radius: 4px;}
+	.Margin{margin:10px 0;}
+	.Content{padding-top:40px;padding-bottom:50px;}
+	.Linkbox a{font-size:16px;}
+	.Address {height:40px;line-height:40px;font-size:22px;border-bottom:1px solid #f2f2f2;}
+	
+	.Goods li{padding:15px 0;margin-bottom:20px;}
+	.Goods .Goodsimg p{padding:0 10px;font-size:18px;line-height:24px;}
+	.Goods .Goodsmoney{padding:0 10px;margin-top:10px;}
+	.Goods .Goodsmoney p{font-size:24px;}
+	.Goods .Goodsmoney p span{margin-left:10px;font-size:18px;}
+	.Goods .Goodsmoney a{width:60px;height:30px;line-height:30px;font-size:18px;border-radius:6px;}
 
-	.Goods li{
-        padding:15px 0;
-        margin-bottom:20px;
-	}
-	.Goods .Goodsimg p{
-		padding:0 10px;
-		font-size:18px;
-		line-height:24px;
-	}
-	.Goods .Goodsmoney{
-		padding:0 10px;
-		margin-top:10px;
-	}
-	.Goods .Goodsmoney p{
-		font-size:24px;
-	}
-	.Goods .Goodsmoney p span{
-		margin-left:10px;
-		font-size:18px;
-	}
-	.Goods .Goodsmoney a{
-		width:60px;
-		height:30px;
-		line-height:30px;
-		font-size:18px;
-		border-radius:6px;
-	}
-	
-	
-	
-	
+	/*goodsdetails*/
+	.Goodslayout .Goodsdata {padding:10px;}
+	.Goodslayout .Goodsdata p {line-height:30px;font-size:20px;}
+	.Goodslayout .Goodsdata p.Money {font-size:24px;}
+	.Goodslayout .Details {margin:10px 0;padding:10px 0;font-size:0;}
+	.Goodslayout .Details img{margin-bottom:10px;}
+	.Goodslayout .Details p{margin-bottom:10px;padding:0 10px;line-height:30px;font-size:18px;}
+
 	/*personal center*/
 	.Personaltop img{width:120px;margin-right:20px;}
 	.Personaltop p{margin-top:20px;font-size:20px;line-height:40px;}
@@ -579,6 +554,53 @@ footer .Fbtn{
 	.Personalbox h2 a{font-size:16px;line-height:30px;}
 	.Personalbox .Transbox li{padding:10px 0;}
 	.Personalbox .Transbox li p{margin-top:10px;line-height:30px;font-size:18px;}
+	
+	
+	/*bomd*/
+	.Bomdbox .Bomdhead p {margin-top:15px;line-height:40px;font-size:24px;}
+	.Bomdbox .Bomdhead p span {font-size:20px;}
+	.Bomdbox .Bomdhead .Close {right:10px;top:10px;font-size:24px;}
+	.Bomdbox .Portrait {margin-top:-40px;width:25%;font-size:0;}
+	.Bomdbox .Bomdcomment h2 {font-size:24px;padding-bottom:10px;}
+	.Bomdbox .Bomdcomment .Course{max-height:600px;}
+	.Bomdbox .Bomdcomment .Course li{padding-top:40px;padding-bottom:20px;line-height:30px;border-bottom:1px solid #cccccc;}
+	.Bomdbox .Bomdcomment .Course p{font-size:18px;line-height:30px;}
+	.Bomdbox .Bomdcomment .Course span{top:10px;font-size:18px;}
+	
+	/*buy now num*/
+	.Bomdnum{margin-bottom:10px;padding:10px 2%;}
+	.Bomdnum p{font-size:20px;}
+	.Bomdnum span{margin-left:15px;font-size:18px;padding:5px 10px;-webkit-border-radius:4px;border-radius: 4px;}
+	.Bomdnum span.Num{padding:5px 20px;}
+	.Bomdbox .Tip{margin-bottom:15px;padding:10px 2%;line-height: 25px;font-size: 18px;}
+	/*public end ======================================= */
+	
+	/*bomd buy team*/
+	.Buyteambox .Teamdata li{margin:5px 0;line-height:30px;}
+	.Buyteambox .Teamdata li p{line-height:30px;font-size:18px;}
+	.Buyteambox .Teamdata li input{width:50px;}
+	.Buyteambox .Teamdata li a{padding:5px 10px;font-size:14px;line-height:30px;}
+	.Buyteambox .Teamdata .Tip{line-height:30px;}
+	/*bomd buy team ==================================== */
+
+	/*goodsshow*/
+	.Goodslayout .Goodsbox li a {padding-bottom:10px;}
+	.Goodslayout .Goodsbox li img {width:100%;}
+	.Goodslayout .Goodsbox li p.Details {margin:5px 2%;font-size:18px;}
+	.Goodslayout .Goodsbox li p.Price {font-size:22px;}
+	.Goodslayout .Goodsbox li p.Price span {font-size:20px;}
+	/*goodsshow end ================================= */
+	
+	/*search*/
+	.Searchlayout .Search{margin:10px 3%;height:50px;line-height:50px;border-radius:4px;}
+	.Searchlayout .Search input{font-size:20px;}
+	.Searchlayout .Linkbox {border-bottom:1px solid #f2f2f2;}
+	.Searchlayout .Selectcolor {padding:5px 10%;height:30px;line-height:30px;font-size:18px;border-bottom:1px solid #f2f2f2;}
+	.Searchlayout .Selectcolor a {margin:0 5px;font-size:18px;   }
+	.Stypebtn li{margin:5px 0;}
+	.Stypebtn a img {max-width:90%;}
+	.Stypebtn a p {margin:5px 0;font-size:18px;}
+	/*search end ======================================== */
 }
 
 
