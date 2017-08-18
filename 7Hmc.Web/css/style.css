@@ -544,9 +544,82 @@ header .Orderbox{
 	color:#F8893F;
 	border-bottom: 2px solid #F8893F;
 }
+.Orderdetails{
+	margin-bottom:.2rem;
+	border-top:1px solid #cccccc;
+}
+.Orderdetails h2{
+	padding:.1rem 2%;
+	height:.4rem;
+	line-height:.4rem;
+	font-size:.2rem;
+	color:#000000;
+	vertical-align: middle;
+}
+.Orderdetails h2 img{height:100%;}
+.Orderdetails h2 span{
+	font-size:.18rem;
+	font-weight:normal;
+	color:#EB8F00;
+}
+.Orderdetails .Orderlist{
+	padding:.1rem 2%;
+	background:#f2f2f2;
+}
+.Orderdetails .Orderlist img{max-width:25%;}
+.Orderdetails .Orderlist .Describe{padding:0 2%;max-width:57%;}
+.Orderdetails .Orderlist .Number{max-width:10%;}
+.Orderdetails .Orderlist .Number p{
+	font-size:.24rem;
+	color:#000000;
+}
+.Orderdetails .Orderlist .Number span{
+	font-size:.16rem;
+	color:#cccccc;
+}
 
+.Orderdetails .Orderlist .Describe h3{
+	line-height:.4rem;
+	font-size:.2rem;
+	color:#000000;
+}
+.Orderdetails .Orderlist .Describe span{
+	display: block;
+	padding-top:.1rem;
+	line-height:.16rem;
+	font-size:.18rem;
+	color:#cccccc;
+}
+.Orderdetails .Pay{
+	display: block;
+	padding:.2rem 2%;
+	line-height:.3rem;
+	font-size:.2rem;
+	text-align: right;
+	border-bottom:1px solid #cccccc;
+}
+.Orderdetails .Btnbox{
+	padding:0 2%;
+}
+.Orderdetails .Btnbox .Btn{
+	margin:.1rem 0;
+	margin-left:.1rem;
+	padding:.1rem 0;
+	width:1.5rem;
+}
+.Orderdetails .Btnbox .Btn.Btnwhite{
+	color:#000000;
+	background:#ffffff;
+	border:1px solid #cccccc;
+}
 
-
+.Normal{
+	margin:.2rem 0;
+	font-size:.2rem;
+	font-weight:normal;
+	color:#cccccc;
+	text-align: center;
+}
 /*order details*/
 
 @media only screen and (min-width: 640px) {
@@ -558,7 +631,7 @@ header .Orderbox{
 	
 	.Btn{margin:10px auto;padding:10px 0;height:30px;line-height:30px;font-size:24px;-webkit-border-radius: 4px;border-radius: 4px;}
 	.Margin{margin:10px 0;}
-	.Content{padding-top:40px;padding-bottom:50px;}
+	.Content{padding-top:50px;padding-bottom:50px;}
 	.Linkbox a{font-size:16px;}
 	.Address {height:40px;line-height:40px;font-size:22px;border-bottom:1px solid #f2f2f2;}
 	
@@ -634,11 +707,25 @@ header .Orderbox{
 	/*search end ======================================== */
 	
 	/*order details*/
-	header .Orderbox{height:50px;overflow-x:auto;}
+	header .Orderbox{height:55px;overflow:hidden;}
+	.Ordercontent{padding-top:55px;}
 	.Orderbox .Ordermenu{width:100%;height:50px;line-height:50px;}
 	.Orderbox .Ordermenu li{height:50px;line-height:50px;}
 	.Orderbox .Ordermenu li .Obtn{font-size:24px;line-height:50px;}
+	.Orderdetails h2{height:30px;line-height:30px;font-size:20px;}
+	.Orderdetails h2 span{font-size:18px;}
+	.Orderdetails .Orderlist{padding:5px 2%;}
+	.Orderdetails .Orderlist .Number p{font-size:20px;}
+	.Orderdetails .Orderlist .Number span{font-size:18px;}
+	.Orderdetails .Orderlist .Describe h3{line-height:30px;font-size:18px;}
+	.Orderdetails .Orderlist .Describe span{padding-top:5px;line-height:20px;font-size:16px;}
+	.Orderdetails .Pay{padding:10px 2%;line-height:25px;font-size:18px;}
+	.Orderdetails .Btnbox .Btn{margin:5px 0;margin-left:5px;padding:5px 0;width:100px;font-size:18px;}
+	
+	.Normal{margin:10px 0;font-size:18px;}
 	/*order details end ================================= */
+	
+	
 }
 
 
