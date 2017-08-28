@@ -3,20 +3,44 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" />
-		<title>首页</title>
+		<title>商品详情</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
 		<script type="text/javascript" src="js/mobile_FontSize.js" ></script>
+		
+		<script type="text/javascript">  
+		    $(document).ready(function(){  
+		        XiaLa();
+		    });  
+		    
+		    function XiaLa(){
+		    	var range = 50;             //距下边界长度/单位px  
+		        var elemt = 500;           //插入元素高度/单位px  
+		        var maxnum = 20;            //设置加载最多次数  
+		        var num = 1;  
+		        var totalheight = 0;   
+		        var main = $(".Goods ul");                     //主体元素  
+		        $(window).scroll(function(){  
+		            var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度)  
+		              
+		            totalheight = parseFloat($(window).height()) + parseFloat(srollPos);  
+		            if(($(document).height()-range) <= totalheight  && num != maxnum) {  
+		                main.append("<li><a href='GoodsDetails.html' class='Goodsimg'><img src='img/good.webp' /><p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p></a><div class='Goodsmoney Clearfix'><p class='Fl'>$7.00<span>已拼单7.5万件</span></p><a href='GoodsDetails.html' class='Fr'>去拼单</a></div></li>");
+		                num++;
+		            }  
+		        });  
+		    }
+	    </script>  
 	</head>
 	<body> 
 		<div class="Main">
 			<div class="Layout">
 				<header>
 					<div class="Headerbox Clearfix">
-						<a href="index.html" class="Hbtn">首页</a>
-						<a href="QianTai/GoodsShow.html" class="Hbtn">狗狗</a>
-						<a href="QianTai/GoodsShow.html" class="Hbtn">猫咪</a>
-						<a href="QianTai/GoodsShow.html" class="Hbtn">乌龟</a>
+						<a href="javascript:void(0);" class="Hbtn">首页</a>
+						<a href="javascript:void(0);" class="Hbtn">狗狗</a>
+						<a href="javascript:void(0);" class="Hbtn">猫咪</a>
+						<a href="javascript:void(0);" class="Hbtn">乌龟</a>
 					</div>	
 				</header>
 				
@@ -46,67 +70,28 @@
 					<div class="Goods">
 						<ul>
 							<li>
-								<a href="javascript:void(0);" class="Goodsimg">
+								<a href="GoodsDetails.html" class="Goodsimg">
 									<img src="img/good.webp" />
 									<p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p>
 								</a>
 								<div class="Goodsmoney Clearfix">
 									<p class="Fl">$7.00<span>已拼单7.5万件</span></p>
-									<a href="javascript:void(0);" class="Fr">去拼单</a>
-								</div>
-							</li>
-							<li>
-								<a href="javascript:void(0);" class="Goodsimg">
-									<img src="img/good.webp" />
-									<p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p>
-								</a>
-								<div class="Goodsmoney Clearfix">
-									<p class="Fl">$7.00<span>已拼单7.5万件</span></p>
-									<a href="javascript:void(0);" class="Fr">去拼单</a>
-								</div>
-							</li>
-							<li>
-								<a href="javascript:void(0);" class="Goodsimg">
-									<img src="img/good.webp" />
-									<p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p>
-								</a>
-								<div class="Goodsmoney Clearfix">
-									<p class="Fl">$7.00<span>已拼单7.5万件</span></p>
-									<a href="javascript:void(0);" class="Fr">去拼单</a>
-								</div>
-							</li>
-							<li>
-								<a href="javascript:void(0);" class="Goodsimg">
-									<img src="img/good.webp" />
-									<p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p>
-								</a>
-								<div class="Goodsmoney Clearfix ">
-									<p class="Fl">$7.00<span>已拼单7.5万件</span></p>
-									<a href="javascript:void(0);" class="Fr">去拼单</a>
-								</div>
-							</li>
-							<li>
-								<a href="javascript:void(0);" class="Goodsimg">
-									<img src="img/good.webp" />
-									<p>整理收纳箱【1-3件套大中小】衣物收纳箱 手提储物箱 塑料整理箱收纳盒 有盖大中小号 装衣服箱子</p>
-								</a>
-								<div class="Goodsmoney Clearfix">
-									<p class="Fl">$7.00<span>已拼单7.5万件</span></p>
-									<a href="javascript:void(0);" class="Fr">去拼单</a>
+									<a href="GoodsDetails.html" class="Fr">去拼单</a>
 								</div>
 							</li>
 						</ul>
 						
+						<p class="Downtip">下拉加载更多....</p>
 					</div>
 				
 				</section>
 				
 				<footer>
 					<div class="Footerbox Clearfix">
-						<a href="index.html" class="Fbtn">首页</a>
-						<a href="QianTai/Search.html" class="Fbtn">搜索</a>
+						<a href="javascript:void(0);" class="Fbtn">首页</a>
+						<a href="javascript:void(0);" class="Fbtn">搜索</a>
 						<a href="javascript:void(0);" class="Fbtn">社区</a>
-						<a href="QianTai/PersonalCenter.html" class="Fbtn">个人中心</a>
+						<a href="javascript:void(0);" class="Fbtn">个人中心</a>
 					</div>	
 				</footer>
 			</div>

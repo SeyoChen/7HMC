@@ -40,6 +40,13 @@ body{background:#f2f2f2;}
 	-webkit-border-radius: .1rem;
 	border-radius: .1rem;
 }
+.Downtip{
+	margin:.2rem 0;
+	font-size: .16rem;
+	color:#cccccc;
+	text-align: center;
+}
+
 
 /*bomd*/
 .Bomdbox {
@@ -634,6 +641,7 @@ header .Orderbox{
 	.Content{padding-top:50px;padding-bottom:50px;}
 	.Linkbox a{font-size:16px;}
 	.Address {height:40px;line-height:40px;font-size:22px;border-bottom:1px solid #f2f2f2;}
+	.Downtip{margin:20px 0;font-size: 16px;}
 	
 	.Goods li{padding:15px 0;margin-bottom:20px;}
 	.Goods .Goodsimg p{padding:0 10px;font-size:18px;line-height:24px;}
@@ -658,7 +666,6 @@ header .Orderbox{
 	.Personalbox h2 a{font-size:16px;line-height:30px;}
 	.Personalbox .Transbox li{padding:10px 0;}
 	.Personalbox .Transbox li p{margin-top:10px;line-height:30px;font-size:18px;}
-	
 	
 	/*bomd*/
 	.Bomdbox .Bomdhead p {margin-top:15px;line-height:40px;font-size:24px;}
@@ -724,8 +731,6 @@ header .Orderbox{
 	
 	.Normal{margin:10px 0;font-size:18px;}
 	/*order details end ================================= */
-	
-	
 }
 
 
